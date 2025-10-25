@@ -1,6 +1,6 @@
 <?php
 //fetch.php
-$connect = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","crownstone");
+$connect = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","pooja");
 $columns = array('name', 'price', 'mrp');
 
 $query = "SELECT pp.id as id ,pp.type as type, pp.price as price, pp.mrp as mrp, p.name as name FROM `productprice` pp , `products` p where p.id = pp.productid";

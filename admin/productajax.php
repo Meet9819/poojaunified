@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 // -----------------------------
 // Database connection
 // -----------------------------
-$db = new mysqli("localhost", "pmaroot", "yIGMS1+7fmOHmMasvamEkQ==", "crownstone");
+$db = new mysqli("localhost", "pmaroot", "yIGMS1+7fmOHmMasvamEkQ==", "pooja");
 
 // Check connection
 if ($db->connect_errno) {

@@ -3,7 +3,7 @@
 	$DB_HOST = 'localhost';
 	$DB_USER = 'pmaroot';
 	$DB_PASS = 'yIGMS1+7fmOHmMasvamEkQ==';
-	$DB_NAME = 'crownstone';
+	$DB_NAME = 'pooja';
 	
 	try{
 		$DB_con = new PDO("mysql:host={$DB_HOST};dbname={$DB_NAME}",$DB_USER,$DB_PASS);

@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","crownstone");
+$con = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","pooja");
 // Check connection
 if (mysqli_connect_errno())
   {

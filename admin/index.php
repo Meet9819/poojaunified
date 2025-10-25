@@ -71,7 +71,7 @@ exit(); }
 
 		<div class="row small-spacing">
 
-
+<!-- 
 		<div class="col-lg-3 col-md-6 col-xs-12 ">
 		    <div class="box-content color-orange">
 		        <h4 class="box-title">New Order</h4> 
@@ -190,7 +190,7 @@ exit(); }
  
 
 
-
+ -->
 
 		  
 

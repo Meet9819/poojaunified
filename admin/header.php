@@ -3,10 +3,10 @@
 
 <div class="main-menu">
     <header class="header">
-        <a href="index.php" class="logo">Crown Stone Properties  </a>
+        <a href="index.php" class="logo">Unified Industries  </a>
         <button type="button" class="button-close fa fa-times js__menu_close"></button>
         <div class="user">
-            <a href="user.php" class="avatar"><img src="images/user.png" alt="Crown Stone Properties  User"><span class="status online"></span></a>
+            <a href="user.php" class="avatar"><img src="images/user.png" alt="Unified Industries  User"><span class="status online"></span></a>
             <h5 class="name"><a href="user.php">   <?php echo $_SESSION['user']['username']; ?>!</a></h5>
             <h5 class="position">   <?php echo $type =  $_SESSION['user']['type']; ?></h5>
             <!-- /.name -->

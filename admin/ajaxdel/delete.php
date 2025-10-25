@@ -1,6 +1,6 @@
 <?php
 //delete.php
-$connect = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","crownstone");
+$connect = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","pooja");
 if(isset($_POST["id"]))
 {
  foreach($_POST["id"] as $id)

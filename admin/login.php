@@ -22,7 +22,7 @@
    
   <?php
 session_start();
-$conn=mysqli_connect('localhost','pmaroot','yIGMS1+7fmOHmMasvamEkQ==','crownstone');
+$conn=mysqli_connect('localhost','pmaroot','yIGMS1+7fmOHmMasvamEkQ==','pooja');
 
 //Getting Input value
 if(isset($_POST['login'])){
@@ -99,7 +99,7 @@ if(isset($_POST['login'])){
                 </div>
             </div>
             <!-- /.row -->
-            <div class="frm-footer"> Crown Stone Properties  © 2025.</div>
+            <div class="frm-footer"> Unified Industries  © 2025.</div>
             <!-- /.footer -->
         </div>
         <!-- .inside -->

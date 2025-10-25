@@ -3,7 +3,7 @@
 $dbHost     = "localhost";
 $dbUsername = "pmaroot";
 $dbPassword = "yIGMS1+7fmOHmMasvamEkQ==";
-$dbName     = "crownstone";
+$dbName     = "pooja";
 
 // Create database connection
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

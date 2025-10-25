@@ -126,7 +126,7 @@ if (!(isset($bill_no) && isset($user)))    {
       <tr>
         <td colspan='1' rowspan='1' valign='top' style='font-style:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:normal;padding:11px 26px 14px;width:280px;'>
           <p style='margin:2px 0;line-height: 18px;'> 
-            <strong> Crown Stone Properties  <br> <br clear='none'> No 7/3 Richmond Town, Serpentine Street, Richmond Town, 560025, Bangalore 
+            <strong> Unified Industries  <br> <br clear='none'> No 7/3 Richmond Town, Serpentine Street, Richmond Town, 560025, Bangalore 
                         <br clear='none'>Customer Care - +918861221497
                         <br clear='none'>Email Id - info@smileybeauty.in            
                         </strong> 
@@ -141,7 +141,7 @@ if (!(isset($bill_no) && isset($user)))    {
             echo  $customer_info["userName"]; ?> ,</p>
           <p style='margin:4px 0px 4px 20px;width:640px;font-size:16px;    line-height: 21px;
             font-style: italic;
-            font-weight: bold;'>Thank you for shopping with Crown Stone Properties . We’re happy to let you know that your order has been dispatched and is on its way to you.  </p>
+            font-weight: bold;'>Thank you for shopping with Unified Industries . We’re happy to let you know that your order has been dispatched and is on its way to you.  </p>
         </td>
       </tr>
       <tr>
@@ -352,7 +352,7 @@ if (!(isset($bill_no) && isset($user)))    {
 </tr> 
 <tr>
   <td colspan='2' rowspan='1' style='padding:0 20px 0 20px;line-height:22px;width:640px;'>
-    <p style='border-top:1px solid #ccc;padding:20px 0 0 0;'>Track your order with the <a rel='nofollow' shape='rect' target='_blank' href='' style='color:#d93e7b;text-decoration:none;'><b> Crown Stone Properties </b></a>.
+    <p style='border-top:1px solid #ccc;padding:20px 0 0 0;'>Track your order with the <a rel='nofollow' shape='rect' target='_blank' href='' style='color:#d93e7b;text-decoration:none;'><b> Unified Industries </b></a>.
       <br clear='none'>If you need further assistance with your order, please visit
       <a rel='nofollow' shape='rect' target='_blank' href='http://aaplekarigar.in/contact.php' style='color:#03A9F4;text-decoration:none;'>Customer Service</a>. We hope to see you again soon!
       </span>

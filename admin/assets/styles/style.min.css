@@ -63,7 +63,7 @@ a:focus,
 a:hover {
 	text-decoration: none!important;
 	outline: none;
-	color: #d8ae24
+	color: #bcd800
 }
 
 button,
@@ -159,7 +159,7 @@ label {
 }
 
 .fa-hover:hover {
-	background: #d8ae24;
+	background: #bcd800;
 	color: #ffffff
 }
 
@@ -625,24 +625,24 @@ h4 strong {
 }
 
 .btn-primary {
-	background: #d8ae24
+	background: #bcd800
 }
 
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-	background: #d8ae24!important
+	background: #bcd800!important
 }
 
 .btn-primary.btn-bordered {
-	border-color: #d8ae24;
-	color: #d8ae24
+	border-color: #bcd800;
+	color: #bcd800
 }
 
 .btn-primary.btn-bordered:active,
 .btn-primary.btn-bordered:focus,
 .btn-primary.btn-bordered:hover {
-	border-color: #d8ae24;
+	border-color: #bcd800;
 	color: #ffffff
 }
 
@@ -832,7 +832,7 @@ h4 strong {
 }
 
 .bg-primary {
-	background-color: #d8ae24!important
+	background-color: #bcd800!important
 }
 
 .bg-success {
@@ -977,7 +977,7 @@ h4 strong {
 .table>thead>tr.primary>th,
 .table>thead>tr>td.primary,
 .table>thead>tr>th.primary {
-	background: #d8ae24
+	background: #bcd800
 }
 
 .table>tbody>tr.danger>td,
@@ -1073,7 +1073,7 @@ h4 strong {
 	z-index: 20;
 	right: 0px;
 	padding: 0px 20px 0px 80px;
-	background: #d8ae24;
+	background: #bcd800;
 	color: #ffffff
 }
 
@@ -1209,7 +1209,7 @@ h4 strong {
 	white-space: nowrap;
 	overflow: hidden;
 	color: #ffffff;
-	background: #d8ae24;
+	background: #bcd800;
 	font-weight: 500
 }
 
@@ -1330,7 +1330,7 @@ h4 strong {
 }
 
 .user .control-list a:hover {
-	color: #d8ae24
+	color: #bcd800
 }
 
 .user .name {
@@ -1350,7 +1350,7 @@ h4 strong {
 
 @media (min-width:1025px) {
 	.user .name a:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
@@ -1411,16 +1411,16 @@ h4 strong {
 
 @media (min-width:1025px) {
 	.navigation .menu a:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 	.navigation .menu a:hover i {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
 .navigation .menu a.active,
 .navigation .menu a.current {
-	color: #d8ae24
+	color: #bcd800
 }
 
 .navigation .menu a i {
@@ -1481,7 +1481,7 @@ h4 strong {
 }
 
 .navigation .menu>li.current>a {
-	background: #d8ae24;
+	background: #bcd800;
 	color: #ffffff
 }
 
@@ -1490,7 +1490,7 @@ h4 strong {
 }
 
 .navigation .menu>li.current .current>a {
-	color: #d8ae24
+	color: #bcd800
 }
 
 .navigation .menu>li.current .sub-menu {
@@ -1566,7 +1566,7 @@ h4 strong {
 		height: 75px;
 		font-size: 0;
 		line-height: 80px;
-		color: #d8ae24;
+		color: #bcd800;
 		background: transparent
 	}
 	.menu-active .header .logo:first-letter {
@@ -1579,7 +1579,7 @@ h4 strong {
 		top: 0;
 		width: 75px;
 		height: 75px;
-		background: #d8ae24;
+		background: #bcd800;
 		z-index: -2
 	}
 	.menu-active .header .logo:after {
@@ -1640,7 +1640,7 @@ h4 strong {
 	}
 	.menu-active .navigation .menu>li:hover>a {
 		width: 260px;
-		background: #d8ae24;
+		background: #bcd800;
 		color: #ffffff;
 		padding-left: 90px
 	}
@@ -1843,7 +1843,7 @@ h4 strong {
 }
 
 .fixed-navbar .ico-item.toggle-hover .toggle-content .read-more:hover {
-	color: #d8ae24
+	color: #bcd800
 }
 
 .fixed-navbar .ico-item.toggle-hover.active .toggle-content {
@@ -1919,7 +1919,7 @@ h4 strong {
 }
 
 .fixed-navbar .sub-ico-item a:hover {
-	color: #d8ae24
+	color: #bcd800
 }
 
 @media (max-width:399px) {
@@ -1943,7 +1943,7 @@ h4 strong {
 
 @media (min-width:1025px) {
 	.footer a:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
@@ -2076,7 +2076,7 @@ h4 strong {
 
 @media (min-width:1025px) {
 	.box-content .dropdown.js__drop_down .sub-menu a:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
@@ -2376,7 +2376,7 @@ h4 strong {
 
 .fc .fc-event,
 .fc .fc-event-dot {
-	background: #d8ae24;
+	background: #bcd800;
 	transition: none;
 	-moz-transition: none;
 	-webkit-transition: none
@@ -2537,7 +2537,7 @@ h4 strong {
 }
 
 .dataTables_wrapper .dataTable .group {
-	background-color: #d8ae24!important;
+	background-color: #bcd800!important;
 	color: #ffffff!important
 }
 
@@ -2561,7 +2561,7 @@ h4 strong {
 
 table.focus-on tbody tr.focused td,
 table.focus-on tbody tr.focused th {
-	background: #d8ae24!important;
+	background: #bcd800!important;
 	color: #ffffff!important
 }
 
@@ -2681,7 +2681,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .inbox-list .name {
-	color: #d8ae24;
+	color: #bcd800;
 	margin: 0px;
 	transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -2698,7 +2698,7 @@ table.focus-on tbody tr.focused th {
 
 @media (min-width:1025px) {
 	.inbox-list .name:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
@@ -2793,7 +2793,7 @@ table.focus-on tbody tr.focused th {
 
 .notice-blue {
 	color: #ffffff;
-	background: #d8ae24
+	background: #bcd800
 }
 
 .notice-purple {
@@ -2880,7 +2880,7 @@ table.focus-on tbody tr.focused th {
 
 @media (min-width:1025px) {
 	.notice-list .name:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
@@ -3011,7 +3011,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .notice-popup .notice-read-more:hover {
-	color: #d8ae24
+	color: #bcd800
 }
 
 #message-popup {
@@ -3142,7 +3142,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .radio.primary label:after {
-	background: #d8ae24
+	background: #bcd800
 }
 
 .radio.success label:after {
@@ -3174,7 +3174,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .radio.primary input[type=radio]:checked+label:before {
-	border-color: #d8ae24
+	border-color: #bcd800
 }
 
 .radio.success input[type=radio]:checked+label:before {
@@ -3255,7 +3255,7 @@ table.focus-on tbody tr.focused th {
 
 @media (min-width:1025px) {
 	.searchform .button-search:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
@@ -3365,8 +3365,8 @@ table.focus-on tbody tr.focused th {
 }
 
 .switch.primary input[type=checkbox]:checked+label:before {
-	background: #d8ae24;
-	border-color: #d8ae24
+	background: #bcd800;
+	border-color: #bcd800
 }
 
 .switch.success input[type=checkbox]:checked+label:before {
@@ -3676,12 +3676,12 @@ table.focus-on tbody tr.focused th {
 }
 
 .box.box-solid.box-primary {
-	border: 1px solid #d8ae24
+	border: 1px solid #bcd800
 }
 
 .box.box-solid.box-primary>.box-header {
 	color: #ffffff;
-	background-color: #d8ae24
+	background-color: #bcd800
 }
 
 .box.box-solid.box-primary>.box-header .btn,
@@ -3914,7 +3914,7 @@ table.focus-on tbody tr.focused th {
 
 .box-body .nav li.active a {
 	background: #ffffff;
-	color: #d8ae24
+	color: #bcd800
 }
 
 .box-body .nav a {
@@ -3927,7 +3927,7 @@ table.focus-on tbody tr.focused th {
 
 .box-body .nav a:hover {
 	background: #ffffff;
-	color: #d8ae24
+	color: #bcd800
 }
 
 .box-body .nav .fa {
@@ -4013,7 +4013,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .mailbox-messages .unread>td:first-of-type {
-	border-left: 5px solid #d8ae24
+	border-left: 5px solid #bcd800
 }
 
 .mailbox-messages .unread .mailbox-subject span {
@@ -4262,7 +4262,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .frm-single .frm-input .frm-inp:focus {
-	border-color: #d8ae24;
+	border-color: #bcd800;
 	padding-left: 10px
 }
 
@@ -4307,14 +4307,14 @@ table.focus-on tbody tr.focused th {
 	width: 100%;
 	height: 36px;
 	border: none;
-	background: #d8ae24;
+	background: #bcd800;
 	color: #ffffff;
 	margin-bottom: 15px
 }
 
 @media (min-width:1025px) {
 	.frm-single .frm-submit:hover {
-		background: #d8ae24
+		background: #bcd800
 	}
 }
 
@@ -4731,7 +4731,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .profile-avatar .btn-inbox {
-	background: #d8ae24
+	background: #bcd800
 }
 
 .profile-friends-list li {
@@ -4922,7 +4922,7 @@ table.focus-on tbody tr.focused th {
 .pricing-table .col-first .thead {
 	border: 1px solid #e9eaeb;
 	background: none;
-	color: #d8ae24;
+	color: #bcd800;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 700;
@@ -4936,7 +4936,7 @@ table.focus-on tbody tr.focused th {
 .pricing-table .thead {
 	height: 110px;
 	padding: 13px;
-	background: #d8ae24;
+	background: #bcd800;
 	color: #fff;
 	vertical-align: middle
 }
@@ -4950,7 +4950,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .pricing-table .thead.bg-main-2 {
-	background-color: #d8ae24
+	background-color: #bcd800
 }
 
 .pricing-table .thead.bg-blue-1 {
@@ -4962,7 +4962,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .pricing-table .thead.bg-blue-3 {
-	background-color: #d8ae24
+	background-color: #bcd800
 }
 
 .pricing-table .price {
@@ -5031,7 +5031,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .pricing-table .td .fa-check {
-	color: #d8ae24;
+	color: #bcd800;
 	font-size: 24px;
 	line-height: 48px
 }
@@ -5072,12 +5072,12 @@ table.focus-on tbody tr.focused th {
 }
 
 .pricing-table .col-featured .td .btn-order {
-	background: #d8ae24
+	background: #bcd800
 }
 
 @media (min-width:1025px) {
 	.pricing-table .td .btn-order:hover {
-		background: #d8ae24
+		background: #bcd800
 	}
 	.pricing-table .col:hover:before {
 		opacity: 1
@@ -5318,12 +5318,12 @@ table.focus-on tbody tr.focused th {
 
 @media (min-width:1025px) {
 	.isotope-filter .filter-controls a:hover {
-		color: #d8ae24
+		color: #bcd800
 	}
 }
 
 .isotope-filter .filter-controls .js__active {
-	color: #d8ae24
+	color: #bcd800
 }
 
 .modal-content {

@@ -1,3 +1,3 @@
 <?php 
-$db= new mysqli("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","crownstone");                                          
+$db= new mysqli("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","pooja");                                          
 ?>

@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","crownstone");
+$connect = mysqli_connect("localhost","pmaroot","yIGMS1+7fmOHmMasvamEkQ==","pooja");
 if(isset($_POST["id"]))
 {
  $value = mysqli_real_escape_string($connect, $_POST["value"]);
