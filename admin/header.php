@@ -65,16 +65,16 @@
                     <a class="waves-effect" href="menuadd.php"><i class="menu-icon fa fa-venus-mars "></i><span>Menu</span></a>
                 </li> 
                 <li>
-                    <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-product-hunt "></i><span>Properties</span><span class="menu-arrow fa fa-angle-down"></span></a>
+                    <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-product-hunt "></i><span>Products</span><span class="menu-arrow fa fa-angle-down"></span></a>
                     <ul class="sub-menu js__content">
-                        <li><a href="productsadd.php">Add Properties</a></li>
-                        <li><a href="productsview.php">View Properties</a></li>
+                        <li><a href="productsadd.php">Add Products</a></li>
+                        <li><a href="productsview.php">View Products</a></li>
                     </ul>
                   
                 </li> 
 
                 <li>
-                    <a class="waves-effect" href="saleproducts.php"><i class="menu-icon fa fa-sliders"></i><span>Sale Properties</span></a>
+                    <a class="waves-effect" href="saleproducts.php"><i class="menu-icon fa fa-sliders"></i><span>Sale Products</span></a>
                 </li>
 
                 <li>
