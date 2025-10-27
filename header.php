@@ -18,41 +18,36 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                    <div class="dropdown-menu border-0 m-0">
-                        <a href="about.php" class="dropdown-item">About </a>
-                        <a href="team.php" class="dropdown-item">Team</a>
-                        <a href="faq.php" class="dropdown-item">Faq</a>
-                        <a href="news.php" class="dropdown-item">News</a>
-                    </div>
-                </div>
+
+                  <a href="about.php" class="nav-item nav-link">About Us</a>
+ 
                 <div class="nav-item dropdown">
                     <a href="products" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                     <div class="dropdown-menu border-0 m-0">
-                        <a href="service-1.php" class="dropdown-item">Control Panel</a>
-                        <a href="service-2.php" class="dropdown-item">LOP/COP</a>
-                        <a href="service-detail.php" class="dropdown-item">Harness</a>
-                        <a href="service-detail.php" class="dropdown-item">Shaft Accessories</a>
-                        <a href="service-detail.php" class="dropdown-item">Encoder</a>
-                        <a href="service-detail.php" class="dropdown-item">ARD</a>
-                        <a href="service-detail.php" class="dropdown-item">Balancing Chain</a>
-                        <a href="service-detail.php" class="dropdown-item">Wires</a>
-                        <a href="service-detail.php" class="dropdown-item">Intercom</a>
-                        <a href="service-detail.php" class="dropdown-item">Drives & Accessories</a>
+                         <?php
+                            include('admin/db.php'); 
+
+                            $result = mysqli_query($con,"SELECT * FROM menu"); 
+                             $tmpCount = 1;
+                            while($row = mysqli_fetch_array($result))
+                            {
+
+                            echo '
+
+                            <a href="products.php?q='.$row['menu_id'].'" class="dropdown-item">'.$row['menu_name'].'</a>
+                            ';
+                            }
+                            ?> 
                     </div>
                 </div>
-                  <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                    <div class="dropdown-menu border-0 m-0">
-                        <a href="service-1.php" class="dropdown-item">Service 1</a>
-                        <a href="service-2.php" class="dropdown-item">Service 2</a>
-                        <a href="service-detail.php" class="dropdown-item">Service Detail</a>
-                    </div>
-                </div>
+                 <!-- <a href="#" class="nav-item nav-link">Services</a> -->
                 
+
+                      
+                        <a href="blogs.php" class="nav-item nav-link">Blogs</a>
+                        <a href="team.php" class="nav-item nav-link">Our Team</a>
               
-                <a href="contact.php" class="nav-item nav-link">Contact</a>
+                  <a href="contact.php" class="nav-item nav-link">Contact</a>
                 </div>
               
              

@@ -19,13 +19,7 @@ error_reporting(E_ALL);
              $img=$_FILES["image"]["name"];
 
 
-            $file2=$_FILES['imgdesc']['tmp_name'];
-            $imgdesc= addslashes(file_get_contents($_FILES['imgdesc']['tmp_name']));
-            $imgdesc_name= addslashes($_FILES['imgdesc']['name']);
-
-            move_uploaded_file($_FILES["imgdesc"]["tmp_name"],"../images/products/" . $_FILES["imgdesc"]["name"]);
-
-             $img2=$_FILES["imgdesc"]["name"];
+           
 
 
             $id=$_POST['id'];  
@@ -59,9 +53,9 @@ error_reporting(E_ALL);
             $highlights           = !empty($_POST['highlights']) ? $_POST['highlights'] : '';
 
  
-            $insert = "INSERT INTO products (sale, newold, maincat, img, imgdesc, pdf, name, bath, bed, sqft, developer, developerid, price, address, shortdescription, description, descr, amenities, highlights, metatag, metatitle, metadescription, status, address,amenities,highlights) 
+            $insert = "INSERT INTO products (sale, newold, maincat, img,   pdf, name, bath, bed, sqft, developer, developerid, price, address, shortdescription, description, descr ) 
 
-            VALUES ('$sale', '$newold', '$maincat', '$img', '$img2', '$pdf', '$name', '$bath', '$bed', '$sqft', '$developer', '$developerid', '$price', '$address', '$shortdescription', '$description', '$descr', '$amenities', '$highlights', '$metatag', '$metatitle', '$metadescription', '$status','$address', '$amenities', '$highlights')";
+            VALUES ('$sale', '$newold', '$maincat', '$img',   '$pdf', '$name', '$bath', '$bed', '$sqft', '$developer', '$developerid', '$price', '$address', '$shortdescription', '$description', '$descr' )";
  
 
                $query =  mysqli_query($con,$insert) or die(mysqli_error($con));

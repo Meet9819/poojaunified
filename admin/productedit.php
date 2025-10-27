@@ -106,42 +106,7 @@ ini_set('display_errors', 1);
         }   
               
 
-        
-        $imgFile2 = $_FILES['imgdesc']['name'];
-        $tmp_dir2 = $_FILES['imgdesc']['tmp_name'];
-        $imgSize2 = $_FILES['imgdesc']['size'];
-                    
-        if($imgFile2)
-        { 
-        
-            
-            $upload_dir = '../images/products/'; // upload directory 
-            $imgExt = strtolower(pathinfo($imgFile2,PATHINFO_EXTENSION)); // get image extension
-            $valid_extensions = array('JPG','jpeg', 'jpg', 'png', 'gif'); // valid extensions
-            $imgdesc = rand(1000,1000000).".".$imgExt;
-            if(in_array($imgExt, $valid_extensions))
-            {           
-                if($imgSize2 < 5000000)
-                {
-                    unlink($upload_dir.$edit_row['imgdesc']);
-                    move_uploaded_file($tmp_dir2,$upload_dir.$imgdesc);
-                }
-                else
-                {
-                    $errMSG = "Sorry, your file is too large it should be less then 5MB";
-                }
-            }
-            else
-            {
-                $errMSG = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";        
-            }   
-        }
-        else
-        {
-            // if no image selected the old image remain as it is.
-            $imgdesc = $edit_row['imgdesc']; // old image from database
-        }   
-              
+         
 
 
 		$price = !empty($_POST['price']) ? $_POST['price'] : 0;
@@ -177,12 +142,11 @@ ini_set('display_errors', 1);
 
 
 
-        $stmt = $DB_con->prepare('UPDATE products SET imgdesc=:imgdesc, maincat=:maincat,   name=:name,  img=:img, description=:description,  descr=:descr,  metatitle=:metatitle, metatag=:metatag, metadescription=:metadescription , shortdescription=:shortdescription, sqft=:sqft
+        $stmt = $DB_con->prepare('UPDATE products SET  maincat=:maincat,   name=:name,  img=:img, description=:description,  descr=:descr,  metatitle=:metatitle, metatag=:metatag, metadescription=:metadescription , shortdescription=:shortdescription, sqft=:sqft
         , developer=:developer, bed=:bed, bath=:bath, price=:price, newold=:newold, sale=:sale, address =:address, amenities =:amenities,  highlights =:highlights
 
          WHERE id=:id');
-
-         	$stmt->bindParam(':imgdesc',$imgdesc);   
+ 
          	$stmt->bindParam(':maincat',$maincat);   
             $stmt->bindParam(':name',$name);    
             $stmt->bindParam(':img',$img); 
@@ -232,7 +196,7 @@ ini_set('display_errors', 1);
                                
 						
 							<div class="form-group">
-								<label for="one" class="col-sm-3 control-label">Property Name</label>
+								<label for="one" class="col-sm-3 control-label">Product Name</label>
 								<div class="col-sm-3">
                                     <input type="hidden" name="id"   value="<?php echo $_GET['edit_id']; ?>" >
 									<input type="text" name="name" class="form-control" id="one"   value="<?php echo $name; ?>" >
@@ -289,58 +253,9 @@ ini_set('display_errors', 1);
 
 							</div>
 
-							<div class="form-group">
-							
-								<label for="imgdesc" class="col-sm-3 control-label">Reels Image</label>
-								<div class="col-sm-3">   
-									<img src="../images/products/<?php echo $imgdesc; ?>" height="70" width="150" />
-									<input type="file" id="imgdesc" name="imgdesc"> 
-									<p class="help-block">Image should be 1000 x 1000 in pixels</p>
-								</div>
-
-								<div class="col-sm-3">							 
-								</div>
-
-							</div>
-
+						 
  	
-								<div class="form-group">
-
-								<label for="newold" class="col-sm-3 control-label">  New / Old</label>
-								<div class="col-sm-3"> 
-																 
-								<select name="newold" id="newold" class="form-control"> 
-								  <option value="1" <?php if($newold == "1") echo "selected"; ?>>New</option>
-								  <option value="" <?php if($newold == "") echo "selected"; ?>>Old</option>
-								</select>
-						
-								</div> 
-                               
-                                <div class="col-sm-3">
-                                </div>
-
-								</div>
-
- 	
-								<div class="form-group">
-								<label for="newold" class="col-sm-3 control-label">  Sale </label>
-								<div class="col-sm-3"> 
-
-								<select name="sale" id="sale" class="form-control"> 
-								  <option value="1" <?php if($sale == "1") echo "selected"; ?>>Yes</option>
-								  <option value="0" <?php if($sale == "0") echo "selected"; ?>>No</option>
-								</select>
-
-								</div> 
-                               
-                                <div class="col-sm-3">
-                                   
-
-                                </div>
-
-								</div>
-
-
+							 
 
 
                             <div class="form-group">
@@ -350,22 +265,7 @@ ini_set('display_errors', 1);
                                 </div>
                             </div>
 
-
-							<div class="form-group">
-								<label for="amenities" class="col-sm-3 control-label">amenities</label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="amenities" id="amenities" ><?php echo $amenities; ?></textarea>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label for="highlights" class="col-sm-3 control-label">highlights</label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="highlights" id="highlights" ><?php echo $highlights; ?></textarea>
-								</div>
-							</div>
-
-
+ 
 							<div class="form-group">
 								<label for="text" class="col-sm-3 control-label">Description</label>
 								<div class="col-sm-6">
@@ -398,118 +298,8 @@ ini_set('display_errors', 1);
                                 </div>
                             </div>
  
-
-
-						<div class="form-group">
-								<label for="bed" class="col-sm-3 control-label">Bed     </label>
-								<div class="col-sm-3">
-									<input type="text" name="bed" class="form-control" id="bed"   value="<?php echo $bed; ?>">
-								</div>
-
-
-								<label for="bath" class="col-sm-3 control-label">Bath    </label>
-								<div class="col-sm-3">
-									<input type="text" name="bath" class="form-control" id="bath"   value="<?php echo $bath; ?>">
-								</div>
-
-
-							</div>
-
-
-
-
-						<div class="form-group">
-								<label for="sqft" class="col-sm-3 control-label">Sqft     </label>
-								<div class="col-sm-3">
-									<input type="text" name="sqft" class="form-control" id="sqft"   value="<?php echo $sqft; ?>">
-								</div>
-
-
-								<label for="developer" class="col-sm-3 control-label">Developer    </label>
-								<div class="col-sm-3">
-									<input type="text" name="developer" class="form-control" id="developer"   value="<?php echo $developer; ?>">
-								</div>
-
-
-							</div>
-
-
-
-						<div class="form-group">
-								<label for="price" class="col-sm-3 control-label">Price     </label>
-								<div class="col-sm-3">
-									<input type="text" name="price" class="form-control" id="price"   value="<?php echo $price; ?>">
-								</div>
-
-
-								<label for="sixteen" class="col-sm-3 control-label"> Address  </label>
-								<div class="col-sm-3">
-									 <input type="text" name="address" class="form-control" id="address"   value="<?php echo $address; ?>">
-								</div>
-
-
-							</div>
-
-
-  
-
-
-
-						<div class="form-group">
-								<label for="fifteen" class="col-sm-3 control-label">Meta Title</label>
-								<div class="col-sm-3">
-									<input type="text" name="metatitle" class="form-control" id="fifteen"   value="<?php echo $metatitle; ?>">
-								</div>
-
-
-								<label for="sixteen" class="col-sm-3 control-label">Meta Tag</label>
-								<div class="col-sm-3">
-									<input type="text" name="metatag" class="form-control" id="sixteen"   value="<?php echo $metatag; ?>">
-								</div>
-
-
-							</div>
-
-
-							<div class="form-group">
-								<label for="seventeen" class="col-sm-3 control-label">Meta Description</label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="metadescription" id="seventeen" > <?php echo $metadescription; ?></textarea>
-								</div>
-							</div> 
-
-
-    <?php 
-
-	$result = mysqli_query($con, "SELECT * FROM productprice  WHERE productid  =  $id ");
-	while ($row = mysqli_fetch_array($result)) {
-								       
-	?>
-
-
-						<div class="form-group">
-								<label for="mrp" class="col-sm-3 control-label">MRP  </label>
-								<div class="col-sm-3">
-									<input type="number" name="mrp" class="form-control" id="mrp"   value="<?php echo $row['mrp']; ?>">
-								</div>
-
-
-								<label for="price" class="col-sm-3 control-label">Smilery Beauty Price   </label>
-								<div class="col-sm-3">
-									<input type="number" name="price" class="form-control" id="price" value="<?php echo $row['price']; ?>">
-								</div>
-
-
-							</div>
-
-
-	<?php 
-	}
-	?>
-
-
-
-
+ 
+ 
 							<div class="form-group margin-bottom-0">
 									<label for="" class="col-sm-3 control-label"></label> 
 
@@ -532,31 +322,7 @@ ini_set('display_errors', 1);
 
 
 
-
-
-
-
-<?php include "moreimages.php"; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+ 
 
 			</div>
 

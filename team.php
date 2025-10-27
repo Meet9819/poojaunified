@@ -12,8 +12,8 @@
                 <h1 class="display-1 text-white animated slideInDown">Our Team</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb text-uppercase mb-0">
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="index.php">Home</a></li>
+                        
                         <li class="breadcrumb-item text-primary active" aria-current="page">Our Team</li>
                     </ol>
                 </nav>
@@ -31,10 +31,21 @@
                 <h1 class="display-5 mb-4">We Are Creative Architecture Team For Your Dream Home</h1>
             </div>
             <div class="row g-0 team-items">
+
+                  <?php
+        include('admin/db.php'); 
+
+        $result = mysqli_query($con,"SELECT * FROM team"); 
+         $tmpCount = 1;
+        while($row = mysqli_fetch_array($result))
+        {
+
+        echo '
+
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="images/team/'.$row['img'].'" alt="">
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
@@ -42,123 +53,15 @@
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
+                            <h3 class="mt-2">'.$row['name'].'   </h3>
+                            <span class="text-primary">'.$row['designation'].'</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
+        ';
+        }
+        ?> 
+               
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@
                     <h4 class="section-title text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Plot No. 196/1/4, Dutchkul Pada, Near Vishwakarma Wadi, Behind Sai Palace Hotel, Kashimira,Mira Road East, Thane - 401107</p>
                     <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+91 9082089011</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><a href="cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f161119103f1a071e120f131a511c1012">[email&#160;protected]</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><a href="cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f161119103f1a071e120f131a511c1012"> </a></p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -15,11 +15,20 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="section-title text-light mb-4">Products</h4>
-                   <a class="btn btn-link" href="service-detail.php">Control Panel</a>
-                    <a class="btn btn-link" href="service-detail.php">LOP/COP</a>
-                    <a class="btn btn-link" href="service-detail.php">Harness</a>
-                    <a class="btn btn-link" href="service-detail.php">Shaft Accessories</a>
-                    <a class="btn btn-link" href="service-detail.php">Encoder</a>
+                   <?php
+                            include('admin/db.php'); 
+
+                            $result = mysqli_query($con,"SELECT * FROM menu"); 
+                             $tmpCount = 1;
+                            while($row = mysqli_fetch_array($result))
+                            {
+
+                            echo '
+
+                            <a href="products.php?q='.$row['menu_id'].'"  class="btn btn-link" >'.$row['menu_name'].'</a>
+                            ';
+                            }
+                            ?>  
                 </div>
                    <div class="col-lg-3 col-md-6">
                     <h4 class="section-title text-light mb-4">Quick Links</h4>

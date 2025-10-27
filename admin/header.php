@@ -48,43 +48,13 @@
                 <li>
                     <a class="waves-effect" href="order.php"><i class="menu-icon fa fa-first-order"></i><span>Order</span></a>
                 </li>
-                 -->
-
-<?php if($type == 'Admin')
-{
-  echo ' 
-				<li>
-                    <a class="waves-effect" href="banner.php"><i class="menu-icon fa fa-sliders"></i><span>Slider </span></a>
-                </li>
-
                 <li>
                     <a class="waves-effect" href="terms1.php"><i class="menu-icon fa fa-align-center"></i><span>About us</span></a>
                 </li>  
-			
-                 <li>
-                    <a class="waves-effect" href="menuadd.php"><i class="menu-icon fa fa-venus-mars "></i><span>Menu</span></a>
-                </li> 
-                <li>
-                    <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-product-hunt "></i><span>Products</span><span class="menu-arrow fa fa-angle-down"></span></a>
-                    <ul class="sub-menu js__content">
-                        <li><a href="productsadd.php">Add Products</a></li>
-                        <li><a href="productsview.php">View Products</a></li>
-                    </ul>
-                  
-                </li> 
-
                 <li>
                     <a class="waves-effect" href="saleproducts.php"><i class="menu-icon fa fa-sliders"></i><span>Sale Products</span></a>
                 </li>
-
-                <li>
-                    <a class="waves-effect" href="team.php"><i class="menu-icon fa fa-bolt"></i><span>Team</span></a>
-                </li> 
-               
-                 <li>
-                    <a class="waves-effect" href="blogsview.php"><i class="menu-icon fa fa-rss "></i><span>Blogs</span></a>
-                </li>
-                <li>
+  <li>
                     <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-table"></i><span>Other Pages</span><span class="menu-arrow fa fa-angle-down"></span></a>
                     <ul class="sub-menu js__content">      
                   
@@ -93,10 +63,6 @@
                     </ul>
                   
                 </li>
-                  <li>
-                    <a class="waves-effect" href="testimonials.php"><i class="menu-icon fa fa-columns"></i><span>Testimonials</span></a>
-                </li>
-                
                 <li>
                     <a class="waves-effect" href="ads.php"><i class="menu-icon fa fa-adn"></i><span>Ads</span></a>
                 </li> 
@@ -107,6 +73,41 @@
                     <a class="waves-effect" href="videosview.php"><i class="menu-icon fa fa-briefcase"></i><span>Videos</span></a>
                 </li>
 
+                 -->
+
+<?php if($type == 'Admin')
+{
+  echo ' 
+				<li>
+                    <a class="waves-effect" href="banner.php"><i class="menu-icon fa fa-sliders"></i><span>Slider </span></a>
+                </li>
+
+			
+                 <li>
+                    <a class="waves-effect" href="menuadd.php"><i class="menu-icon fa fa-venus-mars "></i><span>Categories</span></a>
+                </li> 
+                <li>
+                    <a class="waves-effect parent-item js__control" href="#"><i class="menu-icon fa fa-product-hunt "></i><span>Products</span><span class="menu-arrow fa fa-angle-down"></span></a>
+                    <ul class="sub-menu js__content">
+                        <li><a href="productsadd.php">Add Products</a></li>
+                        <li><a href="productsview.php">View Products</a></li>
+                    </ul>
+                  
+                </li> 
+
+
+                <li>
+                    <a class="waves-effect" href="team.php"><i class="menu-icon fa fa-bolt"></i><span>Team</span></a>
+                </li> 
+               
+                 <li>
+                    <a class="waves-effect" href="blogsview.php"><i class="menu-icon fa fa-rss "></i><span>Blogs</span></a>
+                </li>
+              
+                  <li>
+                    <a class="waves-effect" href="testimonials.php"><i class="menu-icon fa fa-columns"></i><span>Testimonials</span></a>
+                </li>
+                
             </ul>
             
            
@@ -115,10 +116,6 @@
     ';
 }else {
       '
-                <li>
-                    <a class="waves-effect" href="order.php"><i class="menu-icon fa fa-first-order"></i><span>Order</span></a>
-                </li>
-
 
     ';
 }
@@ -126,6 +123,10 @@
                
            ?>
            <!--  
+                <li>
+                    <a class="waves-effect" href="order.php"><i class="menu-icon fa fa-first-order"></i><span>Order</span></a>
+                </li>
+
                 <li>
                     <a class="waves-effect" href="videosview.php"><i class="menu-icon fa fa-briefcase"></i><span>Videos</span></a>
                 </li>
